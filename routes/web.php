@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Praktikum 1
 Route::get('/', function () {
-    return view('welcome');
+    echo "Selamat Datang";
+});
+
+Route::get('/about', function() {
+    echo "1941720057-M. Syifaul Ikrom Almasyriqi";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel dengan ID " .$id;
 });
